@@ -7,10 +7,25 @@ let maxOfTwoNumbers = function (num1, num2) {
         return num2
     }
 }
-// ternanry expression
+// ternary expression
 // let maxOfTwoNumbers = (num1, num2) => num1 >= num2 ? num1 : num2
 
 console.log(maxOfTwoNumbers(3, 10))
 
 //2.
-//Define a function, as a function expression, maxOfThreethat takes three numbers as arguments and returns the largest of them. Again, the Math.max method is not allowed.
+
+let maxOfThree = function (num1, num2, num3) {
+    if (num1 > num2 && num3) {
+        return num1
+    }
+    else if (num2 > num1 && num3) {
+        return num2
+    } else {
+        return num3
+    }
+}
+
+// ternary expression
+// let maxOfThree = (num1, num2, num3) => num1 > num2 && num1 > num3 ? num1 : num2 > num1 && num2 > num3 ? num2 : num3;
+console.log(maxOfThree(2, 56, 12))
+maxOfThree()
