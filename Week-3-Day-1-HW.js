@@ -28,7 +28,6 @@ let maxOfThree = function (num1, num2, num3) {
 // ternary expression
 // let maxOfThree = (num1, num2, num3) => num1 > num2 && num1 > num3 ? num1 : num2 > num1 && num2 > num3 ? num2 : num3;
 console.log(maxOfThree(2, 56, 12))
-maxOfThree()
 
 
 //Problem 3 
@@ -43,6 +42,11 @@ function isCharAVowel(char) {
     }
 }
 
+// ternanry expression
+// let isCharAVowel = (char) => char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u' || char === 'y' ? true : false
+
+
+
 //method 2
 const vowels = ['a', 'e', 'i', 'o', 'u', 'y']
 
@@ -56,6 +60,9 @@ function isCharAVowel(char) {
         }
     }
 }
+
+//ternary expression
+// let isCharAVowel = (char) => vowels.includes(char) ? `Hooray! ${char} is a vowel!` : `Bummer dude, ${char} is not a vowel.`
 console.log(isCharAVowel('a'))
 
 //Problem 4
@@ -72,6 +79,7 @@ let sumArray = function (array) {
 console.log(sumArray(arrayOfNums))
 
 
+
 //Problem 5 
 
 const itsAnArray = [1, 3, 57, 9, 11]
@@ -86,13 +94,17 @@ function multiplyArray(array) {
 
 console.log(multiplyArray(itsAnArray))
 
+
 //Problem 6
-//Define a function, as a function expression, numArgsthat returns the number of arguments passed to the function when called.
 
 let numArgs = function () {
     return arguments.length
 }
 console.log(numArgs(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11))
+
+//ternary expression
+// let numArgs = () => arguments.length ? arguments.length : 0
+
 
 //Problem 7
 
@@ -102,7 +114,12 @@ function reverseString(string) {
     let joinString = reverseString.join('')
     return joinString
 }
+
+//ternary expression
+// let reverseString = (string) => string.split('').reverse().join('')
+
 console.log(reverseString('rockstar'))
+
 
 //Problem 8
 
@@ -119,7 +136,6 @@ console.log(longestStringInArray(['pizza', 'green', 'thisIsNotATest', 'HelloWorl
 
 //Problem 9
 
-
 function stringsLongerThan(array, num) {
     let newArray = []
     for (let i = 0; i < array.length; i++) {
@@ -130,3 +146,4 @@ function stringsLongerThan(array, num) {
     return newArray
 }
 console.log(stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3))
+
